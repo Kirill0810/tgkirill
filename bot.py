@@ -47,7 +47,7 @@ async def cmd_start(message: types.Message):
             types.InlineKeyboardButton(text="Беседа ИКТ-37", url="https://t.me/+plICg8WcSl8zNTNi")
         ],
         [
-            types.InlineKeyboardButton(text="Написать разработчику", url="https://t.me/just_danya_kr")
+            types.InlineKeyboardButton(text="Написать разработчику", url="https://t.me/Kirill08102005")
         ],
         [
             types.InlineKeyboardButton(text="Помощь",  callback_data="help") 
@@ -146,9 +146,9 @@ async def help(callback: types.CallbackQuery):
 # Хендлер information - информация о боте
 @dp.message(Command('information'))
 async def help(message: types.Message):
-    image = URLInputFile('https://sun9-34.userapi.com/impg/wARHgJ5H368qnfFmpJpIY_mAqsQj7HGPi6sQjA/pWJXTxwyUH8.jpg?size=1440x2160&quality=95&sign=d8a86351a8cb61bc636e9e2217e7eed9&type=album')
+    image = URLInputFile('https://sun9-69.userapi.com/impg/TGtl03wMcqfHys2rGAjzutTxecFDzpqT02ozhA/Bo4zjjYEhPc.jpg?size=2560x1707&quality=95&sign=088d6c480b07585b006b24b39d04bb1d&type=album')
 
-    await bot.send_photo(message.chat.id, image , caption='<i><u><b>Разработчик бота</b> - Краснянский Даниил Михайлович</u>\n'
+    await bot.send_photo(message.chat.id, image , caption='<i><u><b>Разработчик бота</b> - Краснянский Кирилл Михайлович</u>\n'
     'Этот бот создан для того чтобы лучше узнать, как кого зовут! Я выполнял этого бота для тренировки себя в программирование.</i>\n'
     'В этом боте рассказано про каждого студента группы IKT-37.')
 
