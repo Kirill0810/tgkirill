@@ -15,9 +15,6 @@ dp = Dispatcher()
 
 
 
-# Для записей с типом Secret* необходимо 
-# вызывать метод get_secret_value(), 
-# чтобы получить настоящее содержимое вместо '*******'
 bot = Bot(token=config.bot_token.get_secret_value(), parse_mode="HTML")
 
 
@@ -60,7 +57,7 @@ async def cmd_start(message: types.Message):
         reply_markup=keyboard
     )
 
-#Хендлер на команду students
+#функция на команду students
 @dp.message(Command('students'))
 async def cmd_students(message: types.Message):
     buttons = [
